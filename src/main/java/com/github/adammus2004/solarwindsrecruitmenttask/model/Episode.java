@@ -11,6 +11,6 @@ public class Episode {
     Long id;
     String name;
     String url;
-    @ManyToMany(mappedBy = "Character")
-    List<Character> episode;
+    @ManyToMany(mappedBy = "episode")
+    List<Character> characters;
 }
